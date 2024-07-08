@@ -1,5 +1,6 @@
 package ch01;
 
+// 전략 패턴 (Strategy Pattern)
 public abstract class Duck {
     // 행동 변수는 행동 인스턴스형식으로 선언
     // 모든 Duck 에는 QuackBehavior 인터페이스를 구현하는 것의 레퍼런스가 있음
@@ -18,8 +19,16 @@ public abstract class Duck {
     };
 
     // 동적으로 만든거 활용하기
+    public void setFlyBehavior(FlyBehavior fb) {
+        this.flyBehavior = fb;
+    }
+
+    public void setQuackBehavior(QuackBehavior qb) {
+        this.quackBehavior = qb;
+    }
 
 
+    public abstract void display();
 
     public void swim() {
         System.out.println("모든 오리는 물에 떠요, 가짜오리도요");
