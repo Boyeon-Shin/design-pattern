@@ -1,4 +1,4 @@
-package ch02.weather;
+package ch02.weatherpull;
 
 public class CurrentConditionsDisplay implements Observer, DisplayElement {
     private float temperature;
@@ -10,9 +10,10 @@ public class CurrentConditionsDisplay implements Observer, DisplayElement {
         weatherData.registerObserver(this);
     }
 
-    public void update(float temp, float humidity, float pressure) {
-        this.temperature = temp;
-        this.humidity = humidity;
+    public void update() {
+        temperature = weatherData.getTemperature();
+        humidity = weatherData.getHumidity();
+
         display();
     }
 

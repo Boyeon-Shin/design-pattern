@@ -1,4 +1,4 @@
-package ch02.weather;
+package ch02.weatherpull;
 
 // 측장치를 바탕으로 가상 예보를 화면에 표시하는 display
 public class ForecastDisplay implements Observer, DisplayElement {
@@ -12,7 +12,9 @@ public class ForecastDisplay implements Observer, DisplayElement {
     }
 
     @Override
-    public void update(final float temp, final float humidity, final float pressure) {
+    public void update() {
+        float pressure = weatherData.getPressure();
+
         lastPressure = currentPressure;
         currentPressure = pressure;
 
