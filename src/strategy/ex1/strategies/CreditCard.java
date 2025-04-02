@@ -1,4 +1,4 @@
-package strategy.strategies;
+package strategy.ex1.strategies;
 
 public class CreditCard {
     private int amount;

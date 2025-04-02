@@ -1,14 +1,13 @@
-package strategy.order;
+package strategy.ex1.order;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.HashMap;
 import java.util.Map;
-import strategy.strategies.CreditCard;
-import strategy.strategies.PayByCreditCard;
-import strategy.strategies.PayByPayPal;
-import strategy.strategies.PayStrategy;
+import strategy.ex1.strategies.PayByCreditCard;
+import strategy.ex1.strategies.PayByPayPal;
+import strategy.ex1.strategies.PayStrategy;
 
 public class Demo {
     private static Map<Integer, Integer> priceOnProducts = new HashMap<>();

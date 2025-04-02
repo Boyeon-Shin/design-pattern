@@ -1,6 +1,6 @@
-package strategy.order;
+package strategy.ex1.order;
 
-import strategy.strategies.PayStrategy;
+import strategy.ex1.strategies.PayStrategy;
 
 public class Order {
     private int totalCost = 0;
