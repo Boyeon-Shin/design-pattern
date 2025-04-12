@@ -9,5 +9,6 @@ public class ChocolateController {
 
 		// will return the existing instance
 		ChocolateBoilerSingleton boiler2 = ChocolateBoilerSingleton.getInstance();
+		System.out.println(boiler2 == boiler);
 	}
 }

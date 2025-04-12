@@ -8,5 +8,7 @@ public class SingletonClient {
         singleton1.fill();
         singleton2.fill();
         singleton2.drain();
+
+        System.out.println(singleton1 == singleton2);
     }
 }
