@@ -1,7 +1,6 @@
 package ch03.io;
 
 import java.io.BufferedInputStream;
-import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
@@ -15,9 +14,10 @@ public class InputTest {
                     new BufferedInputStream(
                             new FileInputStream("test.txt")));
 
-            while ((c == in.read()) >= 0) {
-                System.out.println((char) c);
+            while ((c = in.read()) >= 0) {
+                System.out.print((char) c);
             }
+
             in.close();
         } catch (IOException e) {
             e.printStackTrace();
