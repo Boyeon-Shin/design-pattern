@@ -1,4 +1,4 @@
-package ch03.starbuzz;
+package ch03.starbuzzWithSizes;
 
 public class Mocha extends CondimentDecorator {
 
