@@ -1,13 +1,14 @@
-package mediator.components;
+package mediator.ex1.components;
 
 import java.awt.event.ActionEvent;
 import javax.swing.JButton;
+import mediator.ex1.mediator.Mediator;
 
-public class DeleteButton extends JButton implements Component {
+public class SaveButton extends JButton implements Component {
     private Mediator mediator;
 
-    public DeleteButton() {
-        super("Del");
+    public SaveButton() {
+        super("Save");
     }
 
     @Override
@@ -17,13 +18,11 @@ public class DeleteButton extends JButton implements Component {
 
     @Override
     protected void fireActionPerformed(ActionEvent actionEvent) {
-        mediator.deleteNote();
+        mediator.saveChanges();
     }
 
     @Override
     public String getName() {
-        return "DelButton";
+        return "SaveButton";
     }
-
-
 }

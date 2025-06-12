@@ -1,7 +1,9 @@
-package mediator.components;
+package mediator.ex1.components;
 
 import java.awt.event.ActionEvent;
 import javax.swing.JButton;
+import mediator.ex1.mediator.Mediator;
+import mediator.ex1.mediator.Note;
 
 public class AddButton extends JButton implements Component {
     private Mediator mediator;
@@ -9,7 +11,6 @@ public class AddButton extends JButton implements Component {
     public AddButton() {
         super("Add");
     }
-
 
     @Override
     public void setMediator(final Mediator mediator) {
