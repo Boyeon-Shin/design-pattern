@@ -156,6 +156,7 @@ public class Editor implements Mediator {
         filterPanel.setPreferredSize(new Dimension(280, 40));
         JPanel listPanel = new JPanel();
         list.setFixedCellWidth(260);
+        list.setFixedCellWidth(260);
         listPanel.setSize(320, 470);
         JScrollPane scrollPane = new JScrollPane(list);
         scrollPane.setPreferredSize(new Dimension(275, 410));
