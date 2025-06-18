@@ -10,7 +10,6 @@ public abstract class DataSourceDecorator implements DataSource {
     @Override
     public void writeData(final String data) {
         wrappee.writeData(data);
-        System.out.println("DataSourceDecorator: Data written.......");
     }
 
     @Override
